@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="create">
+    <h1>Генератор автомобилей</h1>
+    <div class="create__main">
+    <input type="text" class="create__input">
+    <button class="create__btn">Сгенерировать</button>
+        <button class="create__info">Настройки</button>
+        <button class="btn__create">Добавить новый автомобиль</button>
+    </div>
+</div>
+
+<div class="info">
+    <div class="info__main">
+            <div class="info__stat"></div>
+            <div class="info__draw">
+                <p class="info__draw-text"></p>
+                <div class="info__draw-color"></div>
+            </div>
+    </div>
+</div>
+
+<div class="search">
+    <input type="text" class="search__input">
+    <button class="search__btn">Поиск</button>
+    <button class="search__reset">Сброс</button>
+</div>
+
+<table class="user-table">
+    <tr>
+        <th scope="col">id</th>
+        <th scope="col">Бренд</th>
+        <th scope="col">Модель</th>
+        <th scope="col">Цвет</th>
+        <th scope="col">Вид топлива</th>
+        <th scope="col">Двигатель</th>
+        <th scope="col">Коробка передач</th>
+        <th scope="col">Цена</th>
+        <th scope="col">Кнопки</th>
+    </tr>
+    <tbody id="user-list">
+
+    </tbody>
+</table>
+
+
+<div class="popup__create">
+    <div class="car-content">
+        <div class="car-inner"></div>
+        <a href="#" class="popup__create-close">X</a>
+        <button class="submit-create">Сохранить</button>
+    </div>
+</div>
+
+<div class="popup">
+
+    <div class="popup-content">
+        <div class="popup__change"><input class="disable__btn" type="checkbox"><p>Изменить параметры</p></div>
+        <div class="popup-inner"></div>
+        <a href="#" class="popup-close">X</a>
+        <button class="submit-btn" disabled="disabled">Сохранить</button>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
